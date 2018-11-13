@@ -35,8 +35,8 @@ Several libraries are needed to use the Requirements Synthesizer. The needed lib
 	  ```
  
 ## Needed resources
-Several resources are needed to use the Requirements Synthesizer. A copy of these resources are saved in the folder resources. Only the reddit vectors have to be downloaded manually, because of it's size. This section describes where they come from in case you want to update them.
-1. [SemLink](https://verbs.colorado.edu/semlink/) is used to have a mapping of VerbNet to PropBank. The file used is `resources\1.2.2c\vn-pb\vnpbMappings`
+Several resources are needed to use the Requirements Synthesizer. The resources have to be downloaded manually and stored in a resources folder. This section describes where they come from and where to place them
+1. [SemLink](https://verbs.colorado.edu/semlink/) is used to have a mapping of VerbNet to PropBank. Download 1.2.2c.zip and place the unpacked foler in the resources folder. The file used is `resources\1.2.2c\vn-pb\vnpbMappings`
 2. requirements.txt should contain the requirements that are used as input to analyze and synthesize requirements. Every line should contain a seperate User Story in Connextra template: As a [user], I want [goal], so that [reason]. As test the User Stories of the [Recycling 101](https://warm-beach-37724.herokuapp.com/) app are used (retrieved from: Dalpiaz, Fabiano (2018), “Requirements data sets (user stories)”, Mendeley Data, v1 http://dx.doi.org/10.17632/7zbk8zsd8y.1).
 3. The latest reddit vectors models are used by [sense2vec](https://github.com/explosion/sense2vec) and are attached to every latest [release](https://github.com/explosion/sense2vec/releases). Download these vectors and unpack them in the resources folder. The folder used is `resources\reddit_vectors-1.1.0`
-4. [VerbNet](http://verbs.colorado.edu/~mpalmer/projects/verbnet/downloads.html) files are used to get the right sentence structure and are saved in `resources\new-vn`
+4. [VerbNet](http://verbs.colorado.edu/~mpalmer/projects/verbnet/downloads.html) files are used to get the right sentence structure. Download the files and unpack them, so that you have them saved in `resources\new-vn`
