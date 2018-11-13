@@ -3,7 +3,8 @@ The Requirements Synthesizer is created by Niels Wever for his Master Thesis: Sy
 
 Installing the libraries which are used is described below for a Windows machine (tested with Windows 10 Home). If you are using another operating system, please follow the links to get instructions
 
-## Installing the libraries before using the Requirements Sythesizer
+## Installing the libraries
+Several libraries are needed to use the Requirements Synthesizer. The needed libraries to install are [NLTK](https://pypi.org/project/nltk/), [PractNLPTools](https://pypi.org/project/practnlptools/), sense2vec](https://github.com/explosion/sense2vec), [spacy](https://spacy.io/), [lib3to2](https://pypi.org/project/3to2/) and [grammar-check](https://pypi.org/project/grammar-check/).
 1. Make sure you have installed Python 2.7, a newer version will not work with PractNLPTools
 2. Install [NLTK](https://pypi.org/project/nltk/)
     * Install with pip is possible `pip install nltk`
@@ -33,3 +34,9 @@ Installing the libraries which are used is described below for a Windows machine
 	  pip install grammar-check
 	  ```
  
+## Needed resources
+Several resources are needed to use the Requirements Synthesizer. A copy of these resources are saved in the folder resources. Only the reddit vectors have to be downloaded manually, because of it's size. This section describes where they come from in case you want to update them.
+1. [SemLink](https://verbs.colorado.edu/semlink/) is used to have a mapping of VerbNet to PropBank. The file used is `resources\1.2.2c\vn-pb\vnpbMappings`
+2. requirements.txt should contain the requirements that are used as input to analyze and synthesize requirements. Every line should contain a seperate User Story in Connextra template: As a [user], I want [goal], so that [reason]. As test the User Stories of the [Recycling 101](https://warm-beach-37724.herokuapp.com/) app are used (retrieved from: Dalpiaz, Fabiano (2018), “Requirements data sets (user stories)”, Mendeley Data, v1 http://dx.doi.org/10.17632/7zbk8zsd8y.1).
+3. The latest reddit vectors models are used by [sense2vec](https://github.com/explosion/sense2vec) and are attached to every latest [release](https://github.com/explosion/sense2vec/releases). Download these vectors and unpack them in the resources folder. The folder used is `resources\reddit_vectors-1.1.0`
+4. [VerbNet](http://verbs.colorado.edu/~mpalmer/projects/verbnet/downloads.html) files are used to get the right sentence structure and are saved in `resources\new-vn`
