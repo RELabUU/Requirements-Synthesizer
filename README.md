@@ -43,5 +43,7 @@ Several resources are needed to use the Requirements Synthesizer. The resources 
 
 ## Using the Requirements Synthesizer
 To use the requirements synthesizer you should have installed the needed libraries and stored the needed resources in the resources folder. Next, an empty output folder needs to be created and the user stories that need to be analyzed should be stored into the requirements.txt file.
+
 If all these steps are taken, first the AnalyzeRequirements.py file should be runned. This file generates a parts.p file in the output folder. With this file GenerateRequirements.py can do its work. Two files are created after running GenerateRequirements.py, an eparts.p file and synthesized_requirements.txt file. This last file contains the synthesized requirements.
+
 If new requirements need to be synthesized, the output folder needs to be emptied.
